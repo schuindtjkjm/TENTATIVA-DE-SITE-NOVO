@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultura Familiar e o JAA</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Agricultura Familiar!<br>E o JAA</h1>
+  </header>
+
+  <main>
+    <section class="video-text-section">
+      <!-- Repetir esse bloco 6 vezes -->
+      <div class="video-text-block">
+        <div class="video">
+          <img src="youtube-placeholder.png" alt="Vídeo do YouTube">
+        </div>
+        <div class="text-box">
+          <p>Texto explicativo da pergunta</p>
+        </div>
+      </div>
+      <!-- ... -->
+    </section>
+
+    <section class="mid-block">
+      <div class="foto">foto</div>
+      <div class="pergunta">pergunta</div>
+      <div class="exemplo">exemplificação</div>
+    </section>
+
+    <section class="interativos">
+      <div id="comentarios" class="caixa-comentarios">
+        <h2>Comentários</h2>
+        <form id="form-comentario">
+          <input type="text" id="comentarioInput" placeholder="Digite seu comentário" required>
+          <button type="submit">Enviar</button>
+        </form>
+        <ul id="listaComentarios"></ul>
+      </div>
+
+      <div class="carrossel">
+        <button onclick="mudarFoto(-1)">⬅️</button>
+        <img id="imagemCarrossel" src="img1.jpg" alt="Carrossel">
+        <button onclick="mudarFoto(1)">➡️</button>
+      </div>
+
+      <div class="contagem">
+        <h2>Contagem para o Agrinho</h2>
+        <p id="contador"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>logo do programação parana</p>
+    <p>Legendas ao centro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
